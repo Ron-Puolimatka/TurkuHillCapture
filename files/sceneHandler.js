@@ -7,7 +7,9 @@ function setup() {
 
 function draw() {
   
-  background(0, 255, 255);
+  background(
+    46, 217, 215
+    );
   drawNewCursor();
   
 }
