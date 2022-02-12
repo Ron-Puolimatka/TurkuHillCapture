@@ -22,12 +22,6 @@ function draw() {
 
 }
 
-function handleFile(file) {
-  if(file.type === 'text') {
-    window.open("game.html", "_self"); 
-  }
-}
-
 function drawNewCursor() {
   
   stroke(255);
