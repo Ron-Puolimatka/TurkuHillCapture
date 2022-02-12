@@ -1,13 +1,14 @@
 function setup() {
   
   resizeCanvas(windowWidth, windowHeight);
+  frameRate(60);
   noCursor(); 
   
 }
 
 function draw() {
   
-  background(0, 255, 255);
+  background(0);
   drawNewCursor();
   
 }
@@ -20,7 +21,7 @@ function windowResized() {
 
 function drawNewCursor() {
   
-  stroke(0);
+  stroke(255);
   
   if (mouseIsPressed) {
     strokeWeight(10);
@@ -32,4 +33,10 @@ function drawNewCursor() {
   point(mouseX, mouseY);
   line(mouseX, mouseY, pmouseX, pmouseY);
   
+}
+
+function loadNewGame() {
+
+  window.open("game.html", "_self");
+
 }

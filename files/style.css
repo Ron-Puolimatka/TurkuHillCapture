@@ -6,7 +6,7 @@ canvas {
   display: block;
 }
 
-#btn1 { 
+#newgame, #continue, #language, #credits { 
   left: clamp(0px, 12vw, 50px);
   top: clamp(0px, 12vw, 50px);
 }
@@ -20,7 +20,7 @@ canvas {
   border-width: clamp(0px, 6vw, 25px);
   border-radius: 100vw;
   border-style: solid;
-  color: #000000;
+  color: white;
   transition: padding-left 0.75s ease, padding-right 0.75s ease;
   cursor: none;
 }
@@ -31,5 +31,5 @@ canvas {
 }
 
 .menubtn:active {
-  color: #787878;
+  color: lightgray;
 }
