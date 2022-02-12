@@ -39,3 +39,6 @@ function loadNewGame() {
   window.open("game.html", "_self");
 
 }
+function loadContinueMenu() {
+  window.open("continue.html", "_self");
+}
