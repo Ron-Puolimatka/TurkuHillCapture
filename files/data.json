@@ -1,0 +1,73 @@
+{
+    "hills" : {
+        "1" : {
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+        },
+
+        "2" : {
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+        },
+
+        "3" : {
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+        },
+
+        "4" : {
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+        },
+
+        "5" : {
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+        },
+
+        "6" : {
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+        },
+
+        "7" : {
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+        }
+    }
+}
