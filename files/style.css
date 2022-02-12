@@ -33,3 +33,18 @@ canvas {
 .menubtn:active {
   color: lightgray;
 }
+.SaveFile {
+  margin-top: 4vw;
+  margin-left: 4vw;
+  color: white;
+  display: block;
+  position: relative;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: clamp(0px, 3vw, 12.5px);
+  border-width: clamp(0px, 6vw, 25px);
+  border-radius: 80vw;
+  border-style: solid;
+  cursor: none;
+  transition: color 0.75s ease, background-color 0.75s ease;
+}

@@ -7,8 +7,6 @@ function setup() {
 
   resizeCanvas(windowWidth, windowHeight);
   noCursor();
-  input = createFileInput(handleFile);
-  input.position(80, 140);
 
 }
 
@@ -16,6 +14,11 @@ function draw() {
 
   background(0);
   drawNewCursor();
+  var inputState = document.getElementById("SaveFile");
+  if (inputState && inputState.value){
+    //set txt value to json
+    window.open("game.html", "_self");
+  }
 
 }
 
