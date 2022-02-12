@@ -1,5 +1,4 @@
 //ei valmis
-StyleSheet
 let input;
 let InputJSON;
 
@@ -17,6 +16,7 @@ function draw() {
   var inputState = document.getElementById("SaveFile");
   if (inputState && inputState.value){
     //set txt value to json
+    inputState.value = null;
     window.open("game.html", "_self");
   }
 
