@@ -7,7 +7,7 @@ function setup() {
 
 function draw() {
   
-  background(150, 205, 205);
+  background(0);
   drawNewCursor();
   
 }
@@ -20,7 +20,7 @@ function windowResized() {
 
 function drawNewCursor() {
   
-  stroke(0);
+  stroke(255);
   
   if (mouseIsPressed) {
     strokeWeight(10);
@@ -32,4 +32,10 @@ function drawNewCursor() {
   point(mouseX, mouseY);
   line(mouseX, mouseY, pmouseX, pmouseY);
   
+}
+
+function loadNewGame() {
+
+  window.open("game.html", "_self");
+
 }
