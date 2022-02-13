@@ -4,6 +4,8 @@ function setup() {
   frameRate(60);
   noCursor(); 
 
+  btn = createButton("test");
+
   center = createVector(width / 2, height / 2);
   
 }
@@ -17,6 +19,8 @@ function draw() {
     center = mouseDrag(center);
   }
   translate(center.x, center.y);
+
+  btn.position(center.x, center.y);
 
   fill(255);
   strokeWeight(0);
