@@ -1,11 +1,16 @@
+function preload() {
+
+  hillData = loadJSON("defaultData.json");
+
+}
+
 function setup() {
   
   resizeCanvas(windowWidth, windowHeight);
   frameRate(60);
   noCursor();
 
-  btn = createButton("Kerttulinmäki");
-  btn.class("hillbtn");
+  setupButtons();
 
   center = createVector(width / 2, height / 2);
   
@@ -21,12 +26,8 @@ function draw() {
   }
   translate(center.x, center.y);
 
-  btn.position(center.x, center.y);
+ updateButtons();
 
-  fill(255);
-  strokeWeight(0);
-  strokeWeight(0);
-  ellipse(100, 100, 50);
 }
 
 function windowResized() {
@@ -74,4 +75,21 @@ function mouseDrag(center, speed=1) {
   
   return newCenter;
   
+}
+
+function setupButtons() {
+
+  hillbtn1 = createButton("Kerttulinmäki");
+  hillbtn1.class("hillbtn");
+
+  hillbtn2 = createButton("Puolalanmäki");
+  hillbtn2.class("hillbtn");
+
+}
+
+function updateButtons() {
+  
+  hillbtn1.position(center.x - hillbtn1.size().width / 2, center.y - hillbtn1.size().height / 2);
+  hillbtn2.position(center.x - hillbtn2.size().width / 2 + 100, center.y - hillbtn2.size().height / 2 + 150);
+
 }
