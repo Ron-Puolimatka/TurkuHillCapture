@@ -2,9 +2,10 @@ function setup() {
   
   resizeCanvas(windowWidth, windowHeight);
   frameRate(60);
-  noCursor(); 
+  noCursor();
 
-  btn = createButton("test");
+  btn = createButton("Kerttulinmäki");
+  btn.class("hillbtn");
 
   center = createVector(width / 2, height / 2);
   
@@ -24,8 +25,8 @@ function draw() {
 
   fill(255);
   strokeWeight(0);
-  ellipse(0, 0, 50);
-  
+  strokeWeight(0);
+  ellipse(100, 100, 50);
 }
 
 function windowResized() {

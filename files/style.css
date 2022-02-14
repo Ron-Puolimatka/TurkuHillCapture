@@ -36,6 +36,33 @@ canvas {
 .menubtn:active {
   color: lightgray;
 }
+
+.hillbtn {
+  border-radius: 100vw;
+  width: 20px;
+  height: 20px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  transition: width 0.5s ease, height 0.5s ease, color 0.5s ease, border-width 0.5s ease;
+  cursor: none;
+  color: white;
+  overflow: hidden;  
+}
+
+.hillbtn:active {
+  background-color: lightgray;
+  border-color: lightgray;
+}
+
+.hillbtn:hover {
+  height: 40px;
+  border-width: 10px;
+  width: 110px;
+  color: black;
+}
+
 .SaveFile {
   margin-top: 4vw;
   margin-left: 4vw;
