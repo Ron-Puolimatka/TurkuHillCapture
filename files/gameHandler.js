@@ -93,3 +93,23 @@ function updateButtons() {
   hillbtn2.position(center.x - hillbtn2.size().width / 2 + 100, center.y - hillbtn2.size().height / 2 + 150);
 
 }
+
+function hideQuestionBtn(question) {
+
+  var btn = document.getElementById("btn" + question);
+  btn.style.display = "none";
+
+}
+
+function showQuestion(hill, question) {
+
+  var btn = document.getElementById("btn" + question);
+  btn.innerHTML = hillData["hills"][hill][question]["question"];
+
+}
+
+function resetQuestion(question) {
+
+  var btn = document.getElementById("btn" + question);
+  btn.innerHTML = question;
+}

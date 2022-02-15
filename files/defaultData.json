@@ -50,7 +50,7 @@
             "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
         },
 
-        "kkorppoolaismäki" : {
+        "korppoolaismäki" : {
             "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },

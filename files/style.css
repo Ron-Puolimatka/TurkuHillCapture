@@ -63,9 +63,37 @@ canvas {
   color: black;
 }
 
-.questionsboxname {
+.questionbtn {
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: black;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: white;
+  border-color: white;
+  transition-property: width, height;
+  transition-duration: 0.5s, 0.25s;
+  transition-delay: 0s, 0.5s;
+  transition-timing-function: ease;
+  cursor: pointer;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.questionbtn:hover {
+  transition-delay: 0.25s, 0s;
+  height: 80px;
+  width: 300px;
+  text-align: left;
+}
+
+.questionbtn:active {
+  background-color: lightgray;
+  border-color: lightgray;
 }
 
 .SaveFile {
