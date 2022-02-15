@@ -112,4 +112,5 @@ function resetQuestion(question) {
 
   var btn = document.getElementById("btn" + question);
   btn.innerHTML = question;
+
 }

@@ -64,6 +64,7 @@ canvas {
 }
 
 .questionbtn {
+  display: block;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   margin-top: 15px;
@@ -94,6 +95,47 @@ canvas {
 .questionbtn:active {
   background-color: lightgray;
   border-color: lightgray;
+}
+
+.answerbtn {
+  height: 40px;
+  width: 90px;
+  border: 0px;
+  padding: 0px;
+  outline: none;
+  border-radius: 0px 20px 20px 0px;
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  margin-left: 35px;
+  transition: width 1s ease;
+  z-index: -1000;
+}
+
+.answerbtn:hover {
+  width: 300px;
+}
+
+.answersendbtn {
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: none;
+  border: 0px;
+  font-size: 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin-left: 15px;
+  background-color: white;
+  z-index: 1000;
+  transition: transform 1s ease;
+}
+
+.answersendbtn:hover {
+  transform: rotate(360deg);
+}
+
+.answersendbtn:active {
+  background-color: lightgray;
 }
 
 .SaveFile {
