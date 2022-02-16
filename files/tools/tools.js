@@ -1,4 +1,4 @@
-function getMistakePrecentage(string, input) {
+function mistakePrecentage(string, input) {
 
     let correct = 0;
     let mistakes = 0;
@@ -35,3 +35,11 @@ function removeDuplicateLetters(string) {
       })
       .join('');
   }
+
+function encodeString(string) {
+    return btoa(string);
+}
+
+function decodeString(string) {
+    return atob(srting);
+}

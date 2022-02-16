@@ -1,6 +1,6 @@
 function preload() {
 
-  hillData = loadJSON("defaultData.json");
+  hillData = JSON.parse(localStorage.getItem("hillData"));
 
 }
 
@@ -13,6 +13,12 @@ function setup() {
   setupButtons();
 
   center = createVector(width / 2, height / 2);
+
+  document.getElementById("transitiondiv").style.opacity = "0";
+  setTimeout(function() {
+    document.getElementById("transitiondiv").style.width = "0%";
+  }, 1000);
+
   
 }
 

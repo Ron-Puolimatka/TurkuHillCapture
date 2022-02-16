@@ -1,6 +1,6 @@
 {
     "hills" : {
-        "samppalinnanmäki" : {
+        "samppalinnanmaki" : {
             "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -10,7 +10,7 @@
             "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
         },
 
-        "kakolanmäki" : {
+        "kakolanmaki" : {
             "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -20,7 +20,7 @@
             "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
         },
 
-        "vartiovuorenmäki" : {
+        "vartiovuorenmaki" : {
             "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -30,7 +30,7 @@
             "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
         },
 
-        "puolalanmäki" : {
+        "puolalanmaki" : {
             "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -40,7 +40,7 @@
             "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
         },
 
-        "kerttulinmäki" : {
+        "kerttulinmaki" : {
             "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -50,7 +50,7 @@
             "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
         },
 
-        "korppoolaismäki" : {
+        "korppoolaismaki" : {
             "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -60,7 +60,7 @@
             "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
         },
 
-        "yliopistonmäki" : {
+        "yliopistonmaki" : {
             "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },

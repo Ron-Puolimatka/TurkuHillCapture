@@ -9,7 +9,7 @@ canvas {
   display: block;
 }
 
-#newgame, #continue, #howtoplay, #credits { 
+#newgame, #continue, #howtoplay, #credits, #backtomenu, #loadsave { 
   left: clamp(0px, 12vw, 50px);
   top: clamp(0px, 12vw, 50px);
 }
@@ -141,18 +141,33 @@ canvas {
   background-color: lightgray;
 }
 
-.SaveFile {
-  margin-top: 4vw;
-  margin-left: 4vw;
-  color: white;
-  display: block;
-  position: relative;
-  background-color: transparent;
-  border-color: transparent;
-  font-size: clamp(0px, 3vw, 12.5px);
-  border-width: clamp(0px, 6vw, 25px);
-  border-radius: 80vw;
-  border-style: solid;
-  cursor: none;
-  transition: color 0.75s ease, background-color 0.75s ease;
+.menutransitiondiv {
+  position: fixed;
+  width: 0%;
+  height: 100%;
+  border: 0px;
+  background-color: rgb(16, 16, 16);
+  transition: width 1s ease;
+  z-index: 10000;
+}
+
+.gametransitiondiv {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  opacity: 100;
+  background-color: rgb(0, 0, 0);
+  transition: opacity 1s ease;
+  z-index: 10000;
+}
+
+.continuetransitiondiv {
+  position: fixed;
+  width: 0%;
+  height: 0%;
+  border: 0px;
+  background-color: rgb(0, 0, 0);
+  transition: left 1s ease;
+  z-index: 10000;
 }

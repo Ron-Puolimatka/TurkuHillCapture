@@ -1,11 +1,14 @@
-//ei valmis
-let input;
-let InputJSON;
-
 function setup() {
 
   resizeCanvas(windowWidth, windowHeight);
   noCursor();
+  fileLoaded = false;
+
+document.getElementById("loadbtns").style.left = "0%";
+
+  if (localStorage.getItem("hillData") !== null) {
+    window.open("game.html", "_self");
+  }
 
 }
 
@@ -14,11 +17,16 @@ function draw() {
   background(0);
   drawNewCursor();
   
-  var inputState = document.getElementById("SaveFile");
-  if (inputState && inputState.value){
-    var defaultData = 'defaultData.json';
-    inputState.value = null;
-    window.open("game.html", "_self");
+  var file = document.getElementById('SaveFile').files[0];
+  if (file && !fileLoaded) {
+    var reader = new FileReader();
+    reader.readAsText(file);
+    reader.onload = function(e) {
+      localStorage.setItem("hillData", atob(e.target.result));      
+      console.log(e.target.result);
+      fileLoaded = true;         
+      window.open("game.html", "_self");   
+    };
   }
 
 }

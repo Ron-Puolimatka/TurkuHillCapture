@@ -5,11 +5,16 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <div style="position: fixed">
-        <button class="menubtn" id="newgame" onclick="loadMainMenu()">Main menu</button>
-        <input type="file" id="SaveFile" accept=".json" class="SaveFile">
-        <p class="WarnText" id="WarnText"></p>
-    </div>
     <script src="continueHandler.js"></script>
+
+    <div class="continuetransitiondiv" id="transitiondiv"></div>
+
+    <div style="position: fixed; left: -40%; transition: left 1s ease;" id="loadbtns">
+        <button class="menubtn" id="backtomenu" onclick="loadMainMenu()">Back to menu</button>
+        <button class="menubtn" id="loadsave" onclick="document.getElementById('SaveFile').click()">Load save file</button>
+        <input type="file" id="SaveFile" accept=".txt" style="display: none;">
+
+    </div>
+
 </body>
 </html>
