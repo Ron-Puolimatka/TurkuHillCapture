@@ -16,7 +16,7 @@ function draw() {
   
   var inputState = document.getElementById("SaveFile");
   if (inputState && inputState.value){
-    var defaultData = 'defaultData.json';
+    //set txt value to json
     inputState.value = null;
     window.open("game.html", "_self");
   }
