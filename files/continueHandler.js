@@ -4,7 +4,7 @@ function setup() {
   noCursor();
   fileLoaded = false;
 
-document.getElementById("loadbtns").style.left = "0%";
+document.getElementById("loadbtns").style.left = "0px";
 
   if (localStorage.getItem("hillData") !== null) {
     window.open("game.html", "_self");
