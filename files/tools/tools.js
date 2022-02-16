@@ -34,12 +34,4 @@ function removeDuplicateLetters(string) {
         return self.indexOf(item) == pos;
       })
       .join('');
-  }
-
-function encodeString(string) {
-    return btoa(string);
-}
-
-function decodeString(string) {
-    return atob(srting);
 }

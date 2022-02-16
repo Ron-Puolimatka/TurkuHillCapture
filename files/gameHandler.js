@@ -1,5 +1,6 @@
 function preload() {
 
+  mapimg = loadImage("placeholdermap.png");
   hillData = JSON.parse(localStorage.getItem("hillData"));
 
 }
@@ -31,8 +32,9 @@ function draw() {
     center = mouseDrag(center);
   }
   translate(center.x, center.y);
+  image(mapimg, 0, 0);
 
- updateButtons();
+  updateButtons();
 
 }
 

@@ -31,6 +31,12 @@ function draw() {
 
 }
 
+function windowResized() {
+  
+  resizeCanvas(windowWidth, windowHeight);
+
+}
+
 function drawNewCursor() {
   
   stroke(255);
