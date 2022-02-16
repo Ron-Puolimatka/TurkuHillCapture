@@ -1,3 +1,5 @@
+let paused = false;
+
 function preload() {
 
   mapimg = loadImage("placeholdermap.png");
@@ -121,4 +123,8 @@ function resetQuestion(question) {
   var btn = document.getElementById("btn" + question);
   btn.innerHTML = question;
 
+}
+
+function openSettings() {
+  
 }
