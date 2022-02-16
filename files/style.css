@@ -9,7 +9,7 @@ canvas {
   display: block;
 }
 
-#newgame, #continue, #language, #credits { 
+#newgame, #continue, #howtoplay, #credits { 
   left: clamp(0px, 12vw, 50px);
   top: clamp(0px, 12vw, 50px);
 }
@@ -107,6 +107,7 @@ canvas {
   text-align: center;
   vertical-align: middle;
   position: fixed;
+  margin-top: 15px;
   margin-left: 35px;
   transition: width 1s ease;
   z-index: -1000;
@@ -127,7 +128,9 @@ canvas {
   margin-left: 15px;
   background-color: white;
   z-index: 1000;
-  transition: transform 1s ease;
+  transition: transform 0.75s ease;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .answersendbtn:hover {
