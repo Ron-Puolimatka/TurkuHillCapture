@@ -49,6 +49,7 @@ function loadNewGame() {
   }, 750);
 
 }
+
 function loadContinueMenu() {
 
   document.getElementById("menubtns").style.left = "-250px";
@@ -60,5 +61,14 @@ function loadContinueMenu() {
     else {
     window.open("continue.html", "_self");
     }
+  }, 750);
+}
+
+function loadGuide() {
+
+  document.getElementById("menubtns").style.left = "-250px";
+  
+  setTimeout(function() {
+  window.open("guide.html", "_self");
   }, 750);
 }
