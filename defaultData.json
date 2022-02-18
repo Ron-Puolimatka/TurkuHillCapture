@@ -1,7 +1,7 @@
 {
     "hills" : {
         "samppalinnanmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "A" : { "question" : "test", "answer" : "empty", "unlocked" : false, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -50,7 +50,7 @@
             "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
         },
 
-        "korppoolaismaki" : {
+        "aninkaistenmaki" : {
             "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },

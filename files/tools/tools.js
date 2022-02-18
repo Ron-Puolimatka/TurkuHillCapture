@@ -25,8 +25,6 @@ function mistakePrecentage(string, input) {
 
 }
 
-// (string.match(/o/g)||[]).length;
-
 function removeDuplicateLetters(string) {
     return string
       .split('')

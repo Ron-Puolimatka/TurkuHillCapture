@@ -7,15 +7,19 @@
   </head>
   <body>
     <script src="gameHandler.js"></script>
+    <script src="tools/tools.js"></script>
+    <script src="defaultData.txt"></script>
 
     <div class="gametransitiondiv" id="transitiondiv"></div>
 
     <div class="settingsDiv"><input type="image" src="/files/images/asetukset.png" height="35" width="35" onclick="openSettings();"></div>
 
     <div style="position: fixed">
+      <div id="answerelements">
+        <input class="answerbtn" placeholder="Answer">
+        <button class="answersendbtn" id="answersendbtn">➤</button>
+      </div>
       <div class="questionbox" id="qnboxA">
-          <input class="answerbtn" placeholder="Answer">
-          <button class="answersendbtn">➤</button>
           <button class="questionbtn" id="btnA" onmouseover="showQuestion('kerttulinmaki', 'A');" onmouseleave="resetQuestion('A');">A</button>
           <button class="questionbtn" id="btnB" onmouseover="showQuestion('kerttulinmaki', 'B');" onmouseleave="resetQuestion('B');">B</button>
           <button class="questionbtn" id="btnC" onmouseover="showQuestion('kerttulinmaki', 'C');" onmouseleave="resetQuestion('C');">C</button>
