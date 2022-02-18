@@ -181,3 +181,29 @@ canvas {
 .settingsDiv:hover {
   transform: rotate(180deg);
 }
+
+.header {
+  display: block;
+  position: relative;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: clamp(0px, 6vw, 25px);
+  border-radius: 100vw;
+  border-style: solid;
+  color: white;
+  cursor: none;
+  padding-top: 10px;
+  padding-left: 55px;
+}
+
+.text {
+  display: block;
+  position: relative;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 100vw;
+  border-style: solid;
+  color: white;
+  cursor: none;
+  padding-left: 90px;
+}
