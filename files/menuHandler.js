@@ -41,7 +41,7 @@ function loadNewGame() {
   fetch('defaultData.txt')
   .then(response => response.text())
   .then(data => {
-    localStorage.setItem("hillData", atob(data));
+    localStorage.setItem("hillData", data);
   });
 
   document.getElementById("menubtns").style.left = "-250px";

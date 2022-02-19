@@ -1,0 +1,23 @@
+>----------------------------------------------------------------------------------------------------------------------------<
+
+	These are the instructions for how to modify the answers or questions.
+
+>----------------------------------------------------------------------------------------------------------------------------<
+
+
+   1. 	Pull/download the files from the GitHub repository using GitHub desktop application.
+
+   2. 	COPY the files "tool.bat" and "data.txt" to the folder containing the"files" folder. 
+
+   3. 	In "data.txt" change the "empty" text in front of ""answer" : " or ""question" : "to your answer or question. 
+   	Each hill has their own set of questions from A to G. The hills are named somewhere above each column of questions. 
+   	(Write the question with in quotation marks like so: "example")
+   	(Do not change other values!)
+
+   4. 	Once you have modified the "data.txt" file run the "tool.bat" file by double clicking it.
+	(Wait at least 10 seconds or until any windows opened by the file close before proceeding to the next step!)
+
+5.	Commit the changes and push/upload them to the GitHub repository using the GitHub desktop application.
+
+
+>----------------------------------------------------------------------------------------------------------------------------<

@@ -8,7 +8,7 @@
   <body>
     <script src="gameHandler.js"></script>
     <script src="tools/tools.js"></script>
-    <script src="defaultData.txt"></script>
+    <script src="defaultData.txt" type="text"></script>
 
     <div class="gametransitiondiv" id="transitiondiv"></div>
 
@@ -16,8 +16,8 @@
 
     <div style="position: fixed">
       <div id="answerelements">
-        <input class="answerbtn" placeholder="Answer">
-        <button class="answersendbtn" id="answersendbtn">➤</button>
+        <input class="answerbtn" id="answerinput" placeholder="Answer">
+        <button class="answersendbtn" onclick="checkAnswer();">➤</button>
       </div>
       <div class="questionbox" id="qnboxA">
           <button class="questionbtn" id="btnA" onmouseover="showQuestion('kerttulinmaki', 'A');" onmouseleave="resetQuestion('A');">A</button>

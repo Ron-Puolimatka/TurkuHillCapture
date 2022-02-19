@@ -22,7 +22,7 @@ function draw() {
     var reader = new FileReader();
     reader.readAsText(file);
     reader.onload = function(e) {
-      localStorage.setItem("hillData", atob(e.target.result));      
+      localStorage.setItem("hillData", e.target.result);      
       console.log(e.target.result);
       fileLoaded = true;         
       window.open("game.html", "_self");   

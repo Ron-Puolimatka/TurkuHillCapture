@@ -1,10 +1,11 @@
 let paused = false;
-let currentQuestion = ["samppalinnanmäki", "A"];
+let currentQuestion = ["kerttulinmaki", "A"];
+let selectedAnswers = [];
 
 function preload() {
 
   mapimg = loadImage("images/placeholdermap.png");
-  hillData = JSON.parse(localStorage.getItem("hillData"));
+  hillData = JSON.parse(atob(localStorage.getItem("hillData")));
 
 }
 
@@ -37,7 +38,6 @@ function draw() {
   if(mouseIsPressed) {
     center = mouseDrag(center);
   }
-  translate(-center.x, -center.y);
   drawNewCursor();
 
 }
@@ -59,6 +59,7 @@ function drawNewCursor() {
     strokeWeight(5);
   }
   
+  translate(-center.x, -center.y);
   point(mouseX, mouseY);
   line(mouseX, mouseY, pmouseX, pmouseY);
   
@@ -130,12 +131,35 @@ function openSettings() {
   
 }
 
-function checkAnswer(hill, question, input) {
+function rateAnswer(hill, question, input) {
 
-  let string = hillData["hills"][hill][question];
+  let string = hillData["hills"][hill][question]["question"];
   if (mistakePrecentage(string, input) < 0.1) {
     return true;
   }
   return false;
+
+}
+
+function checkAnswer() {
+
+  let input = document.getElementById("answerinput").value;
+  console.log(input);
+  let iscorrect = rateAnswer(currentQuestion[0], currentQuestion[1], input);
+
+  if (iscorrect) {
+
+    let chars = "ABCDEFG";
+    let unlockQuestion = chars[chars.indexOf(currentQuestion[1]) + 1];
+    hillData["hills"][currentQuestion[0]][currentQuestion[1]]["solved"] = true;
+
+    if (unlockQuestion !== undefined) {
+      hillData["hills"][currentQuestion[0]][unlockQuestion]["unlocked"] = true;
+    }
+
+    localStorage.setItem("hillData", btoa(JSON.stringify(hillData)));
+    document.getElementById("answerinput").value = "";
+
+  }
 
 }

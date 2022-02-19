@@ -1,7 +1,7 @@
 {
     "hills" : {
         "samppalinnanmaki" : {
-            "A" : { "question" : "test", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -11,7 +11,7 @@
         },
 
         "kakolanmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -21,7 +21,7 @@
         },
 
         "vartiovuorenmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -31,7 +31,7 @@
         },
 
         "puolalanmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -41,7 +41,7 @@
         },
 
         "kerttulinmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -51,7 +51,7 @@
         },
 
         "aninkaistenmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
@@ -61,7 +61,7 @@
         },
 
         "yliopistonmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
             "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
             "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },

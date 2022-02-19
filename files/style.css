@@ -5,6 +5,7 @@ html, body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
 canvas {
   display: block;
 }
@@ -183,6 +184,7 @@ canvas {
 }
 
 .header {
+  font-family: Arial, Helvetica, sans-serif;
   display: block;
   position: relative;
   background-color: transparent;
@@ -197,6 +199,7 @@ canvas {
 }
 
 .text {
+  font-family: Arial, Helvetica, sans-serif;
   display: block;
   position: relative;
   background-color: transparent;
