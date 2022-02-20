@@ -15,10 +15,19 @@
     <div class="settingsDiv"><input type="image" src="/files/images/settingspicWhite.png" height="35" width="35" onclick="openSettings();"></div>
 
     <div style="position: fixed">
-      <div id="answerelements">
+      <div id="textanswerdiv" style="display: none;">
         <input class="answerbtn" id="answerinput" placeholder="Answer">
         <button class="answersendbtn" onclick="checkAnswer();">➤</button>
       </div>
+
+      <div id="choiceanswerdiv">
+        <button class="answersendbtn" onclick="checkAnswer();">➤</button>
+        <button class="answerchoicebtn" style="border-radius: 0px; left: 35px; width: 60px; padding-left: 20px;" id="choicebtn1">1</button>
+        <button class="answerchoicebtn" style="border-radius: 0px; left: 95px;" id="choicebtn2">2</button>
+        <button class="answerchoicebtn" style="border-radius: 0px; left: 135px;" id="choicebtn3">3</button>
+        <button class="answerchoicebtn" style="border-radius: 0px 20px 20px 0px; left: 175px; width: 60px; padding-right: 20px;"id="choicebtn4">4</button>
+      </div>
+
       <div class="questionbox" id="qnboxA">
           <button class="questionbtn" id="btnA" onmouseover="showQuestion('kerttulinmaki', 'A');" onmouseleave="resetQuestion('A');">A</button>
           <button class="questionbtn" id="btnB" onmouseover="showQuestion('kerttulinmaki', 'B');" onmouseleave="resetQuestion('B');">B</button>

@@ -142,6 +142,27 @@ canvas {
   background-color: lightgray;
 }
 
+.answerchoicebtn {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: none;
+  border: 0px;
+  font-size: 15px;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  z-index: -1000;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.25s ease;
+  color: lightgray;
+}
+
+.answerchoicebtn:hover {
+  color: black;
+}
+
 .menutransitiondiv {
   position: fixed;
   width: 0%;

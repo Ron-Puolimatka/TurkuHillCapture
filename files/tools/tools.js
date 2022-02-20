@@ -1,7 +1,13 @@
 function mistakePrecentage(string, input) {
 
+    string = string.toLowerCase();
+    input = input.toLowerCase();
+
     let correct = 0;
     let mistakes = 0;
+
+    string = string.replace("'s", " is").replace("'d", " would").replace("'m", " am").replace("'ll", " will").replace("'re", " are");
+    input = input.replace("'s", " is").replace("'d", " would").replace("'m", " am").replace("'ll", " will").replace("'re", " are");
 
     let letters = removeDuplicateLetters(input);
 
@@ -21,7 +27,9 @@ function mistakePrecentage(string, input) {
         }
     }
 
-    return mistakes / correct;
+    let precentage = mistakes / correct;
+    if (precentage < 0.1) { return true; }
+    else { return false; }
 
 }
 

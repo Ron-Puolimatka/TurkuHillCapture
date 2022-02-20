@@ -1,73 +1,75 @@
 {
     "hills" : {
         "samppalinnanmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
-            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false, "type" : 0},
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 }
         },
 
         "kakolanmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
-            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false, "type" : 0 },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 }
         },
 
         "vartiovuorenmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
-            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false, "type" : 0 },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 }
         },
 
         "puolalanmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
-            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false, "type" : 0 },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 }
         },
 
         "kerttulinmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
-            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false, "type" : 0 },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 }
         },
 
         "aninkaistenmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
-            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false, "type" : 0 },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 }
         },
 
         "yliopistonmaki" : {
-            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false },
-            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false },
-            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false }
+            "A" : { "question" : "empty", "answer" : "empty", "unlocked" : true, "solved" : false, "type" : 0 },
+            "B" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "C" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "D" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "E" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "F" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 },
+            "G" : { "question" : "empty", "answer" : "empty", "unlocked" : false, "solved" : false, "type" : 0 }
         }
-    }
+    },
+
+    "score" : 0
 }

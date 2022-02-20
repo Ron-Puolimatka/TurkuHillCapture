@@ -10,3 +10,5 @@ More hill buttons
 ?drop shadows?
 Menu blurred map image
 Map drag borders (already implemented, needs to be fixed)
+
+TOTAL SCORE SYSTEM

@@ -146,8 +146,9 @@ function checkAnswer() {
   let input = document.getElementById("answerinput").value;
   console.log(input);
   let iscorrect = rateAnswer(currentQuestion[0], currentQuestion[1], input);
+  let questiontype = hillData["hills"][currentQuestion[0]][currentQuestion[1]]["type"];
 
-  if (iscorrect) {
+  if (iscorrect && questiontype === 0) {
 
     let chars = "ABCDEFG";
     let unlockQuestion = chars[chars.indexOf(currentQuestion[1]) + 1];
@@ -159,6 +160,12 @@ function checkAnswer() {
 
     localStorage.setItem("hillData", btoa(JSON.stringify(hillData)));
     document.getElementById("answerinput").value = "";
+
+  }
+
+  else if (iscorrect && type === 1) {
+
+
 
   }
 
