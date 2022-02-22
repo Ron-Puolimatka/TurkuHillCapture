@@ -40,8 +40,8 @@ canvas {
 
 .hillbtn {
   border-radius: 100vw;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-width: 0px;
   border-style: solid;
   border-color: white;
@@ -75,8 +75,8 @@ canvas {
   height: 40px;
   border-radius: 20px;
   border-style: solid;
-  background-color: white;
-  border-color: white;
+  background-color: lightgray;
+  border-color: lightgray;
   transition-property: width, height;
   transition-duration: 0.5s, 0.25s;
   transition-delay: 0s, 0.5s;
@@ -86,16 +86,11 @@ canvas {
   text-align: center;
 }
 
-.questionbtn:hover {
-  transition-delay: 0.25s, 0s;
-  height: 80px;
-  width: 300px;
-  text-align: left;
-}
-
-.questionbtn:active {
-  background-color: lightgray;
-  border-color: lightgray;
+.questionbtn:not( :hover ){
+  transition-delay: 0s, 0.5s !important;
+  width: 40px !important;
+  height: 40px !important;
+  text-align: center !important;
 }
 
 .answerbtn {
@@ -160,7 +155,7 @@ canvas {
 }
 
 .answerchoicebtn:hover {
-  color: black;
+  color: black !important;
 }
 
 .menutransitiondiv {
@@ -229,5 +224,6 @@ canvas {
   border-style: solid;
   color: white;
   cursor: none;
+  margin-right: 90px;
   padding-left: 90px;
 }

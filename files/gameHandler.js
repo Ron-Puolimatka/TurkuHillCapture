@@ -1,10 +1,13 @@
 let paused = false;
-let currentQuestion = ["kerttulinmaki", "A"];
-let selectedAnswers = [];
+let currentQuestion = ["kerttulinmaki", ""];
+let selectedAnswers = "";
 
 function preload() {
 
-  mapimg = loadImage("images/placeholdermap.png");
+  let hours = new Date().getHours;
+  if (hours >= 8 && hours < 18) { mapimg = loadImage("images/mapnight.png"); }
+  else { mapimg = loadImage("images/mapday.png"); }
+
   hillData = JSON.parse(atob(localStorage.getItem("hillData")));
 
 }
@@ -17,7 +20,7 @@ function setup() {
 
   setupButtons();
 
-  center = createVector(0, 0);
+  center = createVector(-2000, -1000);
 
   document.getElementById("transitiondiv").style.opacity = "0";
   setTimeout(function() {
@@ -61,7 +64,9 @@ function drawNewCursor() {
   
   translate(-center.x, -center.y);
   point(mouseX, mouseY);
-  line(mouseX, mouseY, pmouseX, pmouseY);
+  if (!mouseIsPressed) {
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  }
   
 }
 
@@ -93,15 +98,22 @@ function setupButtons() {
 
   hillbtn1 = createButton("Kerttulinmäki");
   hillbtn1.class("hillbtn");
+  hillbtn1.mouseClicked(function(){
+    currentQuestion = ["kerttulinmaki", currentQuestion[1]];
+    document.getElementById("questionbox").style.display = "block";
+  });
 
   hillbtn2 = createButton("Puolalanmäki");
   hillbtn2.class("hillbtn");
+  hillbtn2.mouseClicked(function(){
+    currentQuestion = ["puolalanmaki", currentQuestion[1]];
+  });
 
 }
 
 function updateButtons() {
   
-  hillbtn1.position(center.x - hillbtn1.size().width / 2 + 1050, center.y - hillbtn1.size().height / 2 + 375);
+  hillbtn1.position(center.x - hillbtn1.size().width / 2 + 3491, center.y - hillbtn1.size().height / 2 + 1335);
   hillbtn2.position(center.x - hillbtn2.size().width / 2 + 100, center.y - hillbtn2.size().height / 2 + 150);
 
 }
@@ -113,17 +125,29 @@ function hideQuestionBtn(question) {
 
 }
 
-function showQuestion(hill, question) {
+function showQuestion(question) {
+
+  let hill = currentQuestion[0];
+
+  let unlocked = hillData["hills"][hill][question]["unlocked"];
 
   var btn = document.getElementById("btn" + question);
-  btn.innerHTML = hillData["hills"][hill][question]["question"];
+  if (unlocked) {
+    btn.innerHTML = hillData["hills"][hill][question]["question"];
+    btn.style.transitionDelay = "0.25s, 0s";
+    btn.style.height = "80px";
+    btn.style.width = "300px";
+    btn.style.textAlign = "left";
+  }
 
 }
 
 function resetQuestion(question) {
 
-  var btn = document.getElementById("btn" + question);
-  btn.innerHTML = question;
+  if (currentQuestion != question) {
+    var btn = document.getElementById("btn" + question);
+    btn.innerHTML = question;
+  }
 
 }
 
@@ -133,40 +157,120 @@ function openSettings() {
 
 function rateAnswer(hill, question, input) {
 
-  let string = hillData["hills"][hill][question]["question"];
-  if (mistakePrecentage(string, input) < 0.1) {
+  let string = hillData["hills"][hill][question]["answer"];
+  if (mistakePrecentage(string, input)) {
     return true;
   }
   return false;
 
 }
 
+function activateChoice(choice) {
+
+  choice = choice.toLowerCase();
+  let btn = document.getElementById("choicebtn" + choice);
+
+  if (!selectedAnswers.includes(choice)) {
+    selectedAnswers += choice;
+    btn.style.color = "black";
+  }
+  else {
+    selectedAnswers = selectedAnswers.replace(choice, "");
+    btn.style.color = "lightgray";
+  }
+
+}
+
 function checkAnswer() {
 
-  let input = document.getElementById("answerinput").value;
-  console.log(input);
-  let iscorrect = rateAnswer(currentQuestion[0], currentQuestion[1], input);
-  let questiontype = hillData["hills"][currentQuestion[0]][currentQuestion[1]]["type"];
+  if (!hillData["hills"][currentQuestion[0]][currentQuestion[1]]["solved"]) {
 
-  if (iscorrect && questiontype === 0) {
+    let input = document.getElementById("answerinput").value;
+    let questiontype = hillData["hills"][currentQuestion[0]][currentQuestion[1]]["type"];
+    
+    if (questiontype == 0) {
+      let iscorrect = rateAnswer(currentQuestion[0], currentQuestion[1], input);
 
-    let chars = "ABCDEFG";
-    let unlockQuestion = chars[chars.indexOf(currentQuestion[1]) + 1];
-    hillData["hills"][currentQuestion[0]][currentQuestion[1]]["solved"] = true;
+      if (iscorrect) {
 
-    if (unlockQuestion !== undefined) {
-      hillData["hills"][currentQuestion[0]][unlockQuestion]["unlocked"] = true;
+        let chars = "ABCDEFG";
+        let unlockQuestion = chars[chars.indexOf(currentQuestion[1]) + 1];
+        hillData["hills"][currentQuestion[0]][currentQuestion[1]]["solved"] = true;
+        document.getElementById("btn" + currentQuestion[1]).style.backgroundColor = "lightgreen";
+        document.getElementById("btn" + currentQuestion[1]).style.borderColor = "lightgreen";
+
+        if (unlockQuestion !== undefined) {
+          hillData["hills"][currentQuestion[0]][unlockQuestion]["unlocked"] = true;
+          document.getElementById("btn" + unlockQuestion).style.backgroundColor = "white";
+          document.getElementById("btn" + unlockQuestion).style.borderColor = "white";
+        }
+
+        localStorage.setItem("hillData", btoa(JSON.stringify(hillData)));
+        document.getElementById("answerinput").value = "";
+
+        currentQuestion = [currentQuestion[0], ""];
+        document.getElementById("textanswerdiv").style.display = "none";
+        document.getElementById("choiceanswerdiv").style.display = "none";
+
+      }
     }
 
-    localStorage.setItem("hillData", btoa(JSON.stringify(hillData)));
-    document.getElementById("answerinput").value = "";
+    else {
+      let iscorrect = choiceCorrect(hillData["hills"][currentQuestion[0]][currentQuestion[1]]["answer"], selectedAnswers);
+      if (iscorrect) {
+
+        let chars = "ABCDEFG";
+        let unlockQuestion = chars[chars.indexOf(currentQuestion[1]) + 1];
+        hillData["hills"][currentQuestion[0]][currentQuestion[1]]["solved"] = true;
+        document.getElementById("btn" + currentQuestion[1]).style.backgroundColor = "lightgreen";
+        document.getElementById("btn" + currentQuestion[1]).style.borderColor = "lightgreen";
+
+        if (unlockQuestion !== undefined) {
+          hillData["hills"][currentQuestion[0]][unlockQuestion]["unlocked"] = true;
+        }
+
+        localStorage.setItem("hillData", btoa(JSON.stringify(hillData)));
+        document.getElementById("choicebtna").style.color = "lightgray";
+        document.getElementById("choicebtnb").style.color = "lightgray";
+        document.getElementById("choicebtnc").style.color = "lightgray";
+        document.getElementById("choicebtnd").style.color = "lightgray";
+
+        currentQuestion = [currentQuestion[0], ""];
+        document.getElementById("textanswerdiv").style.display = "none";
+        document.getElementById("choiceanswerdiv").style.display = "none";
+
+      }
+    }
 
   }
 
-  else if (iscorrect && type === 1) {
+}
 
+function selectQuestion(question) {
 
+  if (hillData["hills"][currentQuestion[0]][question]["unlocked"]) {
 
+    if (currentQuestion[1] != question) {
+      currentQuestion = [currentQuestion[0], question];
+      document.getElementById("btn" + question).style.borderColor = "black";
+      
+      if (hillData["hills"][currentQuestion[0]][question]["type"] == 0) {
+        document.getElementById("textanswerdiv").style.display = "block";
+      }
+      else {
+        document.getElementById("choiceanswerdiv").style.display = "block";
+      }
+    }
+    else {
+      currentQuestion = [currentQuestion[0], ""];
+      document.getElementById("btn" + question).style.borderColor = document.getElementById("btn" + question).style.backgroundColor;
+      document.getElementById("textanswerdiv").style.display = "none";
+      document.getElementById("choiceanswerdiv").style.display = "none";
+    }
+
+    let letters = "ABCDEFG".replace(question, "");
+    for (let i = 0; i < letters.length; i++) {
+      document.getElementById("btn" + letters[i]).style.borderColor = document.getElementById("btn" + letters[i]).style.backgroundColor;
+    }
   }
-
 }

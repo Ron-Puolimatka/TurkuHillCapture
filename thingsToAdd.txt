@@ -1,14 +1,9 @@
-Question A - G selection
-More hills
-Questions div for each hill
-Multi choice questions/answers
 Better settings image (current one is not centered)
 How to play menu scroll
-Final map image (brighter colors also)
 Save file saving from "settings"
 More hill buttons
-?drop shadows?
 Menu blurred map image
 Map drag borders (already implemented, needs to be fixed)
+Hill indicator
 
 TOTAL SCORE SYSTEM

@@ -41,3 +41,12 @@ function removeDuplicateLetters(string) {
       })
       .join('');
 }
+
+function choiceCorrect(string, input) {
+    for (let i = 0; i < string.length; i++) {
+        if (!input.includes(string[i])) {
+            return false;
+        }
+    }
+    return true;
+}

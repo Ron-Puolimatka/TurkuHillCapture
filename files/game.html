@@ -20,22 +20,22 @@
         <button class="answersendbtn" onclick="checkAnswer();">➤</button>
       </div>
 
-      <div id="choiceanswerdiv">
+      <div id="choiceanswerdiv" style="display: none">
         <button class="answersendbtn" onclick="checkAnswer();">➤</button>
-        <button class="answerchoicebtn" style="border-radius: 0px; left: 35px; width: 60px; padding-left: 20px;" id="choicebtn1">1</button>
-        <button class="answerchoicebtn" style="border-radius: 0px; left: 95px;" id="choicebtn2">2</button>
-        <button class="answerchoicebtn" style="border-radius: 0px; left: 135px;" id="choicebtn3">3</button>
-        <button class="answerchoicebtn" style="border-radius: 0px 20px 20px 0px; left: 175px; width: 60px; padding-right: 20px;"id="choicebtn4">4</button>
+        <button class="answerchoicebtn" style="border-radius: 0px; left: 35px; width: 60px; padding-left: 20px;" id="choicebtna" onclick="activateChoice('a');">a.</button>
+        <button class="answerchoicebtn" style="border-radius: 0px; left: 95px;" id="choicebtnb" onclick="activateChoice('b');">b.</button>
+        <button class="answerchoicebtn" style="border-radius: 0px; left: 135px;" id="choicebtnc" onclick="activateChoice('c');">c.</button>
+        <button class="answerchoicebtn" style="border-radius: 0px 20px 20px 0px; left: 175px; width: 60px; padding-right: 20px;"id="choicebtnd" onclick="activateChoice('d');">d.</button>
       </div>
 
-      <div class="questionbox" id="qnboxA">
-          <button class="questionbtn" id="btnA" onmouseover="showQuestion('kerttulinmaki', 'A');" onmouseleave="resetQuestion('A');">A</button>
-          <button class="questionbtn" id="btnB" onmouseover="showQuestion('kerttulinmaki', 'B');" onmouseleave="resetQuestion('B');">B</button>
-          <button class="questionbtn" id="btnC" onmouseover="showQuestion('kerttulinmaki', 'C');" onmouseleave="resetQuestion('C');">C</button>
-          <button class="questionbtn" id="btnD" onmouseover="showQuestion('kerttulinmaki', 'D');" onmouseleave="resetQuestion('D');">D</button>
-          <button class="questionbtn" id="btnE" onmouseover="showQuestion('kerttulinmaki', 'E');" onmouseleave="resetQuestion('E');">E</button>
-          <button class="questionbtn" id="btnF" onmouseover="showQuestion('kerttulinmaki', 'F');" onmouseleave="resetQuestion('F');">F</button>
-          <button class="questionbtn" id="btnG" onmouseover="showQuestion('kerttulinmaki', 'G');" onmouseleave="resetQuestion('G');">G</button> 
+      <div class="questionbox" id="questionbox" style="display: none">
+          <button class="questionbtn" style="background-color: white; border-color: white;" id="btnA" onmouseover="showQuestion('A');" onmouseleave="resetQuestion('A');" onclick="selectQuestion('A')">A</button>
+          <button class="questionbtn" id="btnB" onmouseover="showQuestion('B');" onmouseleave="resetQuestion('B');" onclick="selectQuestion('B');">B</button>
+          <button class="questionbtn" id="btnC" onmouseover="showQuestion('C');" onmouseleave="resetQuestion('C');" onclick="selectQuestion('C')">C</button>
+          <button class="questionbtn" id="btnD" onmouseover="showQuestion('D');" onmouseleave="resetQuestion('D');" onclick="selectQuestion('D')">D</button>
+          <button class="questionbtn" id="btnE" onmouseover="showQuestion('E');" onmouseleave="resetQuestion('E');" onclick="selectQuestion('E')">E</button>
+          <button class="questionbtn" id="btnF" onmouseover="showQuestion('F');" onmouseleave="resetQuestion('F');" onclick="selectQuestion('F')">F</button>
+          <button class="questionbtn" id="btnG" onmouseover="showQuestion('G');" onmouseleave="resetQuestion('G');" onclick="selectQuestion('G')">G</button> 
       </div>
     </div>
 
