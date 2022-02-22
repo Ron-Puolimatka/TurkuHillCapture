@@ -22,11 +22,6 @@ function setup() {
   setupButtons();
 
   center = createVector(-2000, -1000);
-
-  document.getElementById("transitiondiv").style.opacity = "0";
-  setTimeout(function() {
-    document.getElementById("transitiondiv").style.width = "0%";
-  }, 1000);
   
 }
 
@@ -103,7 +98,7 @@ function setupButtons() {
 
   hillbtn2 = createButton("Puolalanmäki");
   hillbtn2.class("hillbtn");
-  hillbtn2.mouseClicked(() => {hillOnclick("puolalanmäki")});
+  hillbtn2.mouseClicked(() => {hillOnclick("puolalanmaki")});
 
   hillbtn3 = createButton("Aninkaistenmäki");
   hillbtn3.class("hillbtn");
@@ -119,7 +114,7 @@ function setupButtons() {
 
   hillbtn6 = createButton("Vartiovuorenmäki");
   hillbtn6.class("hillbtn");
-  hillbtn6.mouseClicked(() => {hillOnclick("variovuorenmaki")});
+  hillbtn6.mouseClicked(() => {hillOnclick("vartiovuorenmaki")});
 
   hillbtn7 = createButton("Yliopistonmäki");
   hillbtn7.class("hillbtn");
@@ -130,18 +125,29 @@ function setupButtons() {
 function hillOnclick(hill){
 
   currentQuestion = [hill, currentQuestion[1]];
+
+  let name = hill.replace("maki", "mäki");
+  name = name.charAt(0).toUpperCase() + name.slice(1);
+  document.getElementById("hud").style.display = "block";
+  document.getElementById("currenthill").innerHTML = name;
+
   document.getElementById("questionbox").style.display = "block";
+  document.getElementById("textanswerdiv").style.display = "none";
+  document.getElementById("choiceanswerdiv").style.display = "none";
 
   let letters = "ABCDEFG";
   for (let i = 0; i < letters.length; i++) {
     let solved = hillData["hills"][hill][letters[i]]["solved"];
     let unlocked = hillData["hills"][hill][letters[i]]["unlocked"];
     let btn = document.getElementById("btn" + letters[i]);
+    btn.style.boxShadow = "none";
 
     if (unlocked && !solved) { btn.style.backgroundColor = "white"; btn.style.borderColor = "white"; }
     else if (!unlocked) { btn.style.backgroundColor = "lightgray"; btn.style.borderColor = "lightgray"; }
     else if (solved) { btn.style.backgroundColor = "lightgreen"; btn.style.borderColor = "lightgreen"; }
   }
+
+  currentQuestion = [currentQuestion[0], ""];
 
 }
 
@@ -237,6 +243,7 @@ function checkAnswer() {
         hillData["hills"][currentQuestion[0]][currentQuestion[1]]["solved"] = true;
         document.getElementById("btn" + currentQuestion[1]).style.backgroundColor = "lightgreen";
         document.getElementById("btn" + currentQuestion[1]).style.borderColor = "lightgreen";
+        document.getElementById("btn" + currentQuestion[1]).style.boxShadow = "none";
 
         if (unlockQuestion !== undefined) {
           hillData["hills"][currentQuestion[0]][unlockQuestion]["unlocked"] = true;
@@ -263,9 +270,12 @@ function checkAnswer() {
         hillData["hills"][currentQuestion[0]][currentQuestion[1]]["solved"] = true;
         document.getElementById("btn" + currentQuestion[1]).style.backgroundColor = "lightgreen";
         document.getElementById("btn" + currentQuestion[1]).style.borderColor = "lightgreen";
+        document.getElementById("btn" + currentQuestion[1]).style.boxShadow = "none";
 
         if (unlockQuestion !== undefined) {
           hillData["hills"][currentQuestion[0]][unlockQuestion]["unlocked"] = true;
+          document.getElementById("btn" + unlockQuestion).style.backgroundColor = "white";
+          document.getElementById("btn" + unlockQuestion).style.borderColor = "white";
         }
 
         localStorage.setItem("hillData", btoa(JSON.stringify(hillData)));
@@ -287,11 +297,11 @@ function checkAnswer() {
 
 function selectQuestion(question) {
 
-  if (hillData["hills"][currentQuestion[0]][question]["unlocked"]) {
+  if (hillData["hills"][currentQuestion[0]][question]["unlocked"] && !hillData["hills"][currentQuestion[0]][question]["solved"]) {
 
     if (currentQuestion[1] != question && !hillData["hills"][currentQuestion[0]][question]["solved"]) {
       currentQuestion = [currentQuestion[0], question];
-      document.getElementById("btn" + question).style.boxShadow = "0px 0px 20px lightgray";
+      document.getElementById("btn" + question).style.boxShadow = "0px 0px 20px #c9b271";
       
       if (hillData["hills"][currentQuestion[0]][question]["type"] == 0) {
         let element = document.getElementById("textanswerdiv");

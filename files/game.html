@@ -10,7 +10,7 @@
     <script src="tools/tools.js"></script>
     <script src="defaultData.txt" type="text"></script>
 
-    <div class="gametransitiondiv" id="transitiondiv"></div>
+    <!--div class="gametransitiondiv" id="transitiondiv"></div-->
 
     <div class="settingsDiv"><input type="image" src="/files/images/settingspicWhite.png" height="35" width="35" onclick="openSettings();"></div>
 
@@ -37,6 +37,10 @@
           <button class="questionbtn" id="btnF" onmouseover="showQuestion('F');" onmouseleave="resetQuestion('F');" onclick="selectQuestion('F')">F</button>
           <button class="questionbtn" id="btnG" onmouseover="showQuestion('G');" onmouseleave="resetQuestion('G');" onclick="selectQuestion('G')">G</button> 
       </div>
+    </div>
+
+    <div id="hud" style="position: fixed; bottom: 0; right: 0; display: none;">
+      <p class="hud" id="currenthill">Hill</p>
     </div>
 
 </body></html>

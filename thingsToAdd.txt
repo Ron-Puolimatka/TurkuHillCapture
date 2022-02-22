@@ -1,10 +1,10 @@
 Better settings image (current one is not centered)
 How to play menu scroll
 Save file download from "settings"
-Menu blurred map image
-Map drag borders (already implemented, needs to be fixed)
+?Map drag borders (already implemented, needs to be fixed)?
 Hill indicator
 Total score indicator
-
+Wrong answer shake
+Total score in "settings"
 
 TOTAL SCORE SYSTEM

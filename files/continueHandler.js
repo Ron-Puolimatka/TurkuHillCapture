@@ -55,10 +55,6 @@ function drawNewCursor() {
 
 function loadMainMenu() {
 
-  document.getElementById("loadbtns").style.left = "-240px";
-  
-  setTimeout(function() {
-    window.open("menu.html", "_self");
-  }, 750);
+  window.open("menu.html", "_self")
 
 }
