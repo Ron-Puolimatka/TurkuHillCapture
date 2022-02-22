@@ -4,7 +4,7 @@ function setup() {
   noCursor();
   fileLoaded = false;
 
-document.getElementById("loadbtns").style.left = "0px";
+  document.getElementById("loadbtns").style.left = "0px";
 
   if (localStorage.getItem("hillData") !== null) {
     window.open("game.html", "_self");
@@ -55,6 +55,10 @@ function drawNewCursor() {
 
 function loadMainMenu() {
 
-  window.open("menu.html", "_self")
+  document.getElementById("loadbtns").style.left = "-240px";
+  
+  setTimeout(function() {
+    window.open("menu.html", "_self");
+  }, 750);
 
 }

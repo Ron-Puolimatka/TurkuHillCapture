@@ -50,3 +50,7 @@ function choiceCorrect(string, input) {
     }
     return true;
 }
+
+function getSaveFile() {
+    save(localStorage.getItem("hillData"), "TMHC_SaveFile.txt");
+}

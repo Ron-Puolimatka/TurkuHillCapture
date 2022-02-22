@@ -50,6 +50,7 @@ canvas {
   color: white;
   overflow: hidden;  
   cursor: pointer;
+  z-index: 9;
 }
 
 .hillbtn:active {
@@ -77,17 +78,18 @@ canvas {
   border-style: solid;
   background-color: lightgray;
   border-color: lightgray;
-  transition-property: width, height;
-  transition-duration: 0.5s, 0.25s;
-  transition-delay: 0s, 0.5s;
-  transition-timing-function: ease;
+  transition-property: width, height, box-shadow;
+  transition-duration: 0.5s, 0.25s, 0.1s;
+  transition-delay: 0s, 0.5s, 0s;
+  transition-timing-function: ease, ease, ease-out;
   cursor: pointer;
   word-wrap: break-word;
   text-align: center;
+  z-index: 10;
 }
 
 .questionbtn:not( :hover ){
-  transition-delay: 0s, 0.5s !important;
+  transition-delay: 0s, 0.5s 0s!important;
   width: 40px !important;
   height: 40px !important;
   text-align: center !important;

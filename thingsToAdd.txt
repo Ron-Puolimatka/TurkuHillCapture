@@ -1,9 +1,10 @@
 Better settings image (current one is not centered)
 How to play menu scroll
-Save file saving from "settings"
-More hill buttons
+Save file download from "settings"
 Menu blurred map image
 Map drag borders (already implemented, needs to be fixed)
 Hill indicator
+Total score indicator
+
 
 TOTAL SCORE SYSTEM

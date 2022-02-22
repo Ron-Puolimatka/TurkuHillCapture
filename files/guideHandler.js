@@ -4,7 +4,7 @@ function setup() {
     frameRate(60);
     noCursor();
 
-    document.getElementById("loadbtns").style.left = "0px";
+    document.getElementById("loadbtns").style.opacity = "100";
 }
 
 function draw() {
@@ -37,6 +37,10 @@ function drawNewCursor() {
 }
 function loadMainMenu() {
 
-    window.open("menu.html", "_self")
+    document.getElementById("loadbtns").style.opacity = "0";
+  
+    setTimeout(function() {
+        window.open("menu.html", "_self");
+    }, 750);
   
 }
