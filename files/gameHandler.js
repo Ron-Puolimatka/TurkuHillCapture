@@ -34,10 +34,12 @@ function draw() {
 
   updateButtons();
 
-  if(mouseIsPressed) {
-    center = mouseDrag(center);
+  if (!paused) {
+    if(mouseIsPressed) {
+      center = mouseDrag(center);
+    }
+    drawNewCursor();
   }
-  drawNewCursor();
 
 }
 
@@ -197,7 +199,31 @@ function resetQuestion(question) {
 }
 
 function openSettings() {
+
+  document.getElementById("settingsdiv").style.display = "block";
+  document.getElementById("settingstext").style.opacity = "100";
+  document.getElementById("blurdiv").style.backdropFilter = "blur(25px)"
+  document.getElementById("scorebtn").innerHTML = "Score: " + hillData["score"].toString();
+  paused = true;
   
+}
+
+function closeSettings() {
+
+  document.getElementById("settingstext").style.opacity = "0";
+  document.getElementById("blurdiv").style.backdropFilter = "blur(0px)"
+  paused = false;
+
+  setTimeout(function() {
+    document.getElementById("settingsdiv").style.display = "none";
+  }, 750);
+
+}
+
+function copyScore() {
+
+  copyToClipboard(hillData["score"]);
+
 }
 
 function rateAnswer(hill, question, input) {
@@ -238,6 +264,8 @@ function checkAnswer() {
 
       if (iscorrect) {
 
+        hillData["score"] += 10;
+
         let chars = "ABCDEFG";
         let unlockQuestion = chars[chars.indexOf(currentQuestion[1]) + 1];
         hillData["hills"][currentQuestion[0]][currentQuestion[1]]["solved"] = true;
@@ -259,11 +287,19 @@ function checkAnswer() {
         document.getElementById("choiceanswerdiv").style.display = "none";
 
       }
+      else {
+        if ((hillData["score"] - 2) > 0) { hillData["score"] -= 2; }
+        else { hillData["score"] = 0; }
+        localStorage.setItem("hillData", btoa(JSON.stringify(hillData)));
+        console.log(hillData["score"]);
+      }
     }
 
     else {
       let iscorrect = choiceCorrect(hillData["hills"][currentQuestion[0]][currentQuestion[1]]["answer"], selectedAnswers);
       if (iscorrect) {
+
+        hillData["score"] += 10;
 
         let chars = "ABCDEFG";
         let unlockQuestion = chars[chars.indexOf(currentQuestion[1]) + 1];
@@ -288,6 +324,12 @@ function checkAnswer() {
         document.getElementById("textanswerdiv").style.display = "none";
         document.getElementById("choiceanswerdiv").style.display = "none";
 
+      }
+      else {
+        if ((hillData["score"] - 2) > 0) { hillData["score"] -= 2; }
+        else { hillData["score"] = 0; }
+        localStorage.setItem("hillData", btoa(JSON.stringify(hillData)));
+        console.log(hillData["score"]);
       }
     }
 
@@ -324,4 +366,14 @@ function selectQuestion(question) {
       document.getElementById("btn" + letters[i]).style.borderColor = document.getElementById("btn" + letters[i]).style.backgroundColor;
     }
   }
+}
+
+function loadMainMenu() {
+
+  document.getElementById("settingstext").style.opacity = "0";
+
+  setTimeout(function() {
+      window.open("menu.html", "_self");
+  }, 750);
+
 }

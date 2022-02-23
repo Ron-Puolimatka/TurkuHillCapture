@@ -1,10 +1,4 @@
-Better settings image (current one is not centered)
-How to play menu scroll
-Save file download from "settings"
+?Better settings image (current one is not centered)
 ?Map drag borders (already implemented, needs to be fixed)?
-Hill indicator
-Total score indicator
-Wrong answer shake
-Total score in "settings"
+?rong answer shake
 
-TOTAL SCORE SYSTEM

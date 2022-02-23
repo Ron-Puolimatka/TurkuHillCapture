@@ -16,6 +16,7 @@ canvas {
 }
 
 .menubtn {
+  font-family: Arial, Helvetica, sans-serif;
   display: block;
   position: relative;
   background-color: transparent;
@@ -193,9 +194,9 @@ canvas {
 
 .settingsDiv {
   position: fixed;
-  right: 20px;
-  top: 10px;
-  transition: ease 1.5s;
+  right: 15px;
+  top: 15px;
+  transition: transform 0.75s ease;
 }
 .settingsDiv:hover {
   transform: rotate(180deg);
