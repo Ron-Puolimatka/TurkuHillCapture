@@ -26,7 +26,7 @@
    4.	Save changes:
 	   - Open "Changes" tab in the desktop application.
 	   - Change the commit "Summary" to anything you want and press "Commit to main".
-	   - From the top bar or almost middle of the window press "Push".
+	   - From the top bar or almost middle of the window press "Push origin".
 
    5.	Go to your browser and open website "yourusername.github.io" replacing "yourusername" with your GitHub username. (Remove quotation marks ("").)
 
