@@ -286,6 +286,8 @@ function checkAnswer() {
         document.getElementById("textanswerdiv").style.display = "none";
         document.getElementById("choiceanswerdiv").style.display = "none";
 
+        if (checkComplete()) { window.open("completed.html", "_self"); }
+
       }
       else {
         if ((hillData["score"] - 2) > 0) { hillData["score"] -= 2; }
@@ -323,6 +325,8 @@ function checkAnswer() {
         currentQuestion = [currentQuestion[0], ""];
         document.getElementById("textanswerdiv").style.display = "none";
         document.getElementById("choiceanswerdiv").style.display = "none";
+
+        if (checkComplete()) { window.open("completed.html", "_self"); }
 
       }
       else {
@@ -375,5 +379,15 @@ function loadMainMenu() {
   setTimeout(function() {
       window.open("menu.html", "_self");
   }, 750);
+
+}
+
+function checkComplete() {
+
+  let ihills = ["samppalinnanmaki", "kakolanmaki", "vartiovuorenmaki", "puolalanmaki", "kerttulinmaki", "aninkaistenmaki", "yliopistonmaki"];
+  for (let i = 0; i < ihills.length; i++) {
+    if (!hillData["hills"][ihills[i]]["G"]["solved"]) { return false; }
+  }
+  return true;
 
 }

@@ -9,7 +9,7 @@ function mistakePrecentage(string, input) {
     string = string.replace("'s", " is").replace("'d", " would").replace("'m", " am").replace("'ll", " will").replace("'re", " are");
     input = input.replace("'s", " is").replace("'d", " would").replace("'m", " am").replace("'ll", " will").replace("'re", " are");
 
-    let letters = removeDuplicateLetters(input);
+    let letters = removeDuplicateLetters(string);
 
     for (let i = 0; i < letters.length; i++) {
         let amount = input.split(letters[i]).length-1;

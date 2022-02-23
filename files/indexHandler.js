@@ -1,0 +1,1 @@
+window.open("menu.html", "_self");
