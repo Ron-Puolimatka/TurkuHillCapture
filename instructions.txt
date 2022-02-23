@@ -1,23 +1,52 @@
->----------------------------------------------------------------------------------------------------------------------------<
-
-	These are the instructions for how to modify the answers or questions.
-
->----------------------------------------------------------------------------------------------------------------------------<
+>--------------------------------------------------------------------------------------------------------------------------------------------------------<
 
 
-   1. 	Pull/download the files from the GitHub repository using GitHub desktop application.
-
-   2. 	COPY the files "tool.bat" and "data.txt" to the folder containing the"files" folder. 
-
-   3. 	In "data.txt" change the "empty" text in front of ""answer" : " or ""question" : "to your answer or question. 
-   	Each hill has their own set of questions from A to G. The hills are named somewhere above each column of questions. 
-   	(Write the question with in quotation marks like so: "example")
-   	(Do not change other values!)
-
-   4. 	Once you have modified the "data.txt" file run the "tool.bat" file by double clicking it.
-	(Wait at least 10 seconds or until any windows opened by the file close before proceeding to the next step!)
-
-5.	Commit the changes and push/upload them to the GitHub repository using the GitHub desktop application.
+	Hosting website from GitHub:
 
 
->----------------------------------------------------------------------------------------------------------------------------<
+   1.	Make new account in "github.com". (The final website's url/link will start with the username you choose.)
+
+   3. 	Download GitHub desktop application from here "desktop.github.com"
+	   - Install and login to the application with your GitHub account.
+
+   2.	Create new repository from "github.com":
+	   - Click "+" icon in top right corner.
+	   - Choose "New repository".
+	   - Change the repository name to "yourusername.github.io" replacing "yourusername" with your GitHub username. (Remove quotation marks ("").)
+	   - Make sure the repository is set to be public.
+	   - Click "Create repository".
+	   - Do not close the page that opened.
+
+   3.	Upload website files to the repository:
+	   - Click "Setup in desktop" in the page that opened. (The GitHub desktop application should open.)
+	   - Choose where to save the repository on your computer by pressing "Choose" next to "Local path".
+	   - Click "Clone" in the desktop application.
+	   - Find the repository folder on your computer and copy all files from "website_copy" to that folder.
+
+   4.	Save changes:
+	   - Open "Changes" tab in the desktop application.
+	   - Change the commit "Summary" to anything you want and press "Commit to main".
+	   - From the top bar or almost middle of the window press "Push".
+
+   5.	Go to your browser and open website "yourusername.github.io" replacing "yourusername" with your GitHub username. (Remove quotation marks ("").)
+
+
+>--------------------------------------------------------------------------------------------------------------------------------------------------------<
+
+
+	Changing questions and answers:
+
+
+   1.	Copy files from "tools" folder to the website folder containing containing "index.html".
+
+   2.	Open the "data.txt" file you just copied:
+	   - Each hill has its own set of questions labeled from "A" to "G". The values of each question are next to the label.
+	   - Change question by changing the "empty" text in ""question" : "empty",".
+	   - Change answer by chaning the "empty" text in ""answer" : "empty",". (If your answer is a multi choice answer, 
+	     type the correct answers like so: "abcd" or "ad". Change also the 0 in ""type" : 0" to 1.
+   	   - Do not remove the quotation marks ("") when changing question or answer.
+
+   3.	When you are ready with modifying "data.txt" double click the "tool.bat" and wait 10 seconds or until all windows opened by it have closed.
+
+
+>--------------------------------------------------------------------------------------------------------------------------------------------------------<

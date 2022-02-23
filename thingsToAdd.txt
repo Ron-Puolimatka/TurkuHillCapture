@@ -1,4 +1,0 @@
-?Better settings image (current one is not centered)
-?Map drag borders (already implemented, needs to be fixed)?
-?rong answer shake
-
