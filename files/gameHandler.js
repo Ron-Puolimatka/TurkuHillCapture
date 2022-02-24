@@ -9,6 +9,9 @@ function preload() {
   if (hours >= 18 || hours < 8) { mapimg = loadImage("images/mapnight.png"); }
   else { mapimg = loadImage("images/mapday.png"); }
 
+  correctsound = new Audio("audio/correct.mp3");
+  incorrectsound = new Audio("audio/incorrect.mp3");
+
   hillData = JSON.parse(atob(localStorage.getItem("hillData")));
 
 }
@@ -220,12 +223,6 @@ function closeSettings() {
 
 }
 
-function copyScore() {
-
-  copyToClipboard(hillData["score"]);
-
-}
-
 function rateAnswer(hill, question, input) {
 
   let string = hillData["hills"][hill][question]["answer"];
@@ -288,12 +285,17 @@ function checkAnswer() {
 
         if (checkComplete()) { window.open("completed.html", "_self"); }
 
+        correctsound.currentTime=0;
+        correctsound.play();
+
       }
       else {
         if ((hillData["score"] - 2) > 0) { hillData["score"] -= 2; }
         else { hillData["score"] = 0; }
         localStorage.setItem("hillData", btoa(JSON.stringify(hillData)));
         console.log(hillData["score"]);
+        incorrectsound.currentTime=0;
+        incorrectsound.play();
       }
     }
 
@@ -328,12 +330,17 @@ function checkAnswer() {
 
         if (checkComplete()) { window.open("completed.html", "_self"); }
 
+        correctsound.currentTime=0;
+        correctsound.play();
+
       }
       else {
         if ((hillData["score"] - 2) > 0) { hillData["score"] -= 2; }
         else { hillData["score"] = 0; }
         localStorage.setItem("hillData", btoa(JSON.stringify(hillData)));
         console.log(hillData["score"]);
+        incorrectsound.currentTime=0;
+        incorrectsound.play();
       }
     }
 

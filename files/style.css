@@ -213,7 +213,7 @@ canvas {
   border-style: solid;
   color: white;
   cursor: none;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-left: 55px;
 }
 
@@ -228,7 +228,7 @@ canvas {
   color: white;
   cursor: none;
   margin-right: 90px;
-  padding-left: 90px;
+  padding-left: 120px;
 }
 
 .hud {

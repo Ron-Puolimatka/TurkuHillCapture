@@ -90,3 +90,12 @@ function loadGuide() {
   window.open("guide.html", "_self");
   }, 750);
 }
+
+function loadCredits() {
+
+  document.getElementById("menubtns").style.left = "-250px";
+  
+  setTimeout(function() {
+  window.open("credits.html", "_self");
+  }, 750);
+}

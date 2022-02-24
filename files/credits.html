@@ -1,0 +1,25 @@
+<!DOCTYPE html><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <script src="guideHandler.js"></script>
+
+    <div class="continuetransitiondiv" id="transitiondiv"></div>
+
+    <div style="position: fixed; left: 0px; opacity: 0; transition: left 0.75s ease, opacity 1s ease; overflow-y: auto; overflow-x: hidden; height: 100%;" id="loadbtns">
+        <button class="menubtn" id="backtomenu" onclick="loadMainMenu()">Back to menu</button>
+        <div style="padding-top: 40px; padding-bottom: 40px;">            
+            <h2 class="header">Credits:</h2>
+            <p class="text">Front-end and back-end development: <br> Ron Puolimatka, Leevi Sirkkilä</p>
+            <p class="text">Map model and renders:<br> Ron Puolimatka</p>
+
+            <h2 class="header">Notes on development:</h2>
+            <p class="text">This game started from an idea of the teachers of Luostarivuori, to teach Italys's exchange students about Turku in a more fun way. Despite starting the development right away, we had to hurry since we wanted to get this done before our high school joint search. Due to this there are still ways to cheat in the game, all of which could have been removed with more time.</p>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,1 +1,1 @@
-window.open("menu.html", "_self");
+window.open("files/menu.html", "_self");
