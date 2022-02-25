@@ -206,7 +206,6 @@ function openSettings() {
   document.getElementById("settingsdiv").style.display = "block";
   document.getElementById("settingstext").style.opacity = "100";
   document.getElementById("blurdiv").style.backdropFilter = "blur(25px)"
-  document.getElementById("scorebtn").innerHTML = "Score: " + hillData["score"].toString();
   paused = true;
   
 }

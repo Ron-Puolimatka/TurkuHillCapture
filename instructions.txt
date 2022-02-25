@@ -48,5 +48,7 @@
 
    3.	When you are ready with modifying "data.txt" double click the "tool.bat" and wait 10 seconds or until all windows opened by it have closed.
 
+   4.	Delete all the files you copied from "tools". ("data.txt", "tool.bat")
+
 
 >--------------------------------------------------------------------------------------------------------------------------------------------------------<
