@@ -12,12 +12,15 @@
 
     <!--div class="gametransitiondiv" id="transitiondiv"></div-->
 
+    <div id="preloader"></div>
+
     <div class="settingsDiv"><input type="image" src="/files/images/settingspicWhite.png" height="35" width="35" onclick="openSettings();"></div>
 
     <div id="settingsdiv" style="display: none;">
       <div style="position: fixed; margin: 50px; z-index: 11; opacity: 0; transition: opacity 0.75s ease;" id="settingstext">
         <button class="menubtn" style="cursor: pointer;" id="settingscontinuebtn" onclick="closeSettings();">Continue</button>
         <button class="menubtn" style="cursor: pointer;" id="savebtn" onclick="downloadSaveFile();">Save as file</button>
+        <button class="menubtn" style="cursor: pointer;" id="savebtn" onclick="loadGuide();">How to play</button>
         <button class="menubtn" style="cursor: pointer;" id="savebtn" onclick="loadMainMenu();;">Back to menu</button>
       </div>
 
@@ -52,5 +55,12 @@
     <div id="hud" style="position: fixed; bottom: 0; right: 0; display: none;">
       <p class="hud" id="currenthill">Hill</p>
     </div>
+
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function() {
+        loader.style.display = "none";
+      })
+    </script>
 
 </body></html>

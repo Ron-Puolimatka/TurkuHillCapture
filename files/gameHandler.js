@@ -397,3 +397,12 @@ function checkComplete() {
   return true;
 
 }
+
+function loadGuide() {
+
+  document.getElementById("settingstext").style.opacity = "0";
+
+  setTimeout(function() {
+      window.open("guide.html", "_self");
+  }, 750);
+}
